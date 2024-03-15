@@ -104,12 +104,30 @@ address {
     color: #2e2f42;
     padding: 24px 0;
     display: block;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-menu-link:hover,
 .header-menu-link:focus {
     color: #404bbf;
 }
+
+.current {
+position: relative;
+color: #404bbf;
+}
+
+.current::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    background-color: #404bbf;
+    border-radius: 2px;
+    height: 4px;
+    width: 100%;
+}
+
 
 .header-address {
     font-style: normal;
@@ -127,6 +145,7 @@ address {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #434455;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-address-link:hover,
@@ -140,12 +159,16 @@ address {
 
 .hero {
     background: #2e2f42;
+    background-image: url(../images/people-office.jpg);
     padding-top: 188px;
     padding-bottom: 188px;
     width: 1440px;
     margin: 0 auto;
     }
-   
+
+ .linear {
+    background-image: linear-gradient (rgba(46, 47, 66, 0.7). rgba(46, 47, 66, 0.7));
+ }   
 .hero-title {
     max-width: 496px;
     font-weight: 700;
@@ -192,13 +215,17 @@ address {
 
 .features-list {
     display: flex;
-    gap: 24px;
+    gap: 8px;
 }
 
 .features-item {
    width: calc((100% - 3 * 24px) / 4);
 }
 
+.features-icon {
+    margin: 0 auto;
+
+}
 .features-subtitle {
     font-weight: 500;
     font-size: 20px;
@@ -272,7 +299,32 @@ address {
     color: #434455;
     text-align: center;
 }
+.team-icons-list {
+display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 24px;
+}
 
+.team-icons-link {
+    width: 40px;
+    height: 40px;
+    background-color: #4D5AE5;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+        justify-content: center;
+}
+
+.team-icons-item {
+    fill: transparent;
+    stroke: #ffffff;
+}
+
+.team-icons-link:hover {
+    background-color: #404BBF;
+}
 /** ========================= */
 
 /** ===========PORTFOLIO========== */
