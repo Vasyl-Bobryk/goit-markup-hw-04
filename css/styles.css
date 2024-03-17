@@ -347,8 +347,7 @@ color: #404bbf;
 
 .team-icons-item {
     fill: #f4f4fd;
-    stroke: #ffffff;
-}
+    }
 
 .team-icons-link:hover,
 .team-icons-link:focus {
@@ -529,8 +528,7 @@ margin-bottom: 16px;
 
 .footer-icons-item {
     fill: #f4f4fd;
-    stroke: #ffffff;
-}
+    }
 
 .footer-icons-link:hover,
 .footer-icons-link:focus {
